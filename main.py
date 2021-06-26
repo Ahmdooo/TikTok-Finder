@@ -55,9 +55,9 @@ def checksessionid():
     sendchecksession = req.get(urlchecksession, data=datachecksession, headers=headerschecksession, cookies=cookieschecksession)
     jsonsendchecksession = str(sendchecksession.json()["status_msg"])
     if jsonsendchecksession == "" or "":
-        wacn(f"{Style.BRIGHT}{Fore.LIGHTGREEN_EX}هذه الجلسة ليست محظورة")
+        wacn(f"{Style.BRIGHT}{Fore.LIGHTGREEN_EX}The session isnt blocked")
     else:
-        wacn(f"{Style.BRIGHT}{Fore.LIGHTRED_EX}تم حظر معرف الجلسة هذا")
+        wacn(f"{Style.BRIGHT}{Fore.LIGHTRED_EX}The session is blocked")
     exit()
 
 
@@ -95,11 +95,11 @@ def checkerwithoutsession(user, count):
     }
     sendcheckerwithoutsession = req.get(urlcheckerwithoutsession, headers=headerscheckerwithoutsession)
     if sendcheckerwithoutsession.status_code == 404:
-        print(f"{Style.BRIGHT}{Fore.LIGHTBLACK_EX}[{Fore.LIGHTYELLOW_EX}{count}{Fore.LIGHTBLACK_EX}] {Fore.LIGHTWHITE_EX}{user}: {Fore.LIGHTGREEN_EX} تم الصيد")
+        print(f"{Style.BRIGHT}{Fore.LIGHTBLACK_EX}[{Fore.LIGHTYELLOW_EX}{count}{Fore.LIGHTBLACK_EX}] {Fore.LIGHTWHITE_EX}{user}: {Fore.LIGHTGREEN_EX} Available but it may be banned")
         with open("found.txt", "a") as found:
             found.write(user + "\n")
     else:
-        print(f"{Style.BRIGHT}{Fore.LIGHTBLACK_EX}[{Fore.LIGHTYELLOW_EX}{count}{Fore.LIGHTBLACK_EX}] {Fore.LIGHTWHITE_EX}{user}: {Fore.LIGHTRED_EX} لم يتم الصيد")
+        print(f"{Style.BRIGHT}{Fore.LIGHTBLACK_EX}[{Fore.LIGHTYELLOW_EX}{count}{Fore.LIGHTBLACK_EX}] {Fore.LIGHTWHITE_EX}{user}: {Fore.LIGHTRED_EX} Unavailable")
 
 
 wacn(f"""{Style.BRIGHT}{Fore.LIGHTYELLOW_EX} TikTok Ahmdofn
