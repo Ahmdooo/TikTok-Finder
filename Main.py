@@ -30,14 +30,14 @@ def vpn():
     }
     sendvpn = req.get(urlvpn, headers=headersvpn)
     if sendvpn.status_code == 404:
-        wacn(f"{Fore.LIGHTGREEN_EX}أنت لست ممنوعا")
+        wacn(f"{Fore.LIGHTGREEN_EX}Your not blocked")
     else:
-        wacn(f"{Fore.LIGHTRED_EX}أنت ممنوع تمكين VPN")
+        wacn(f"{Fore.LIGHTRED_EX}Your blocked use a VPN")
     exit()
 
 
 def checksessionid():
-    sessionid = input(f"{Fore.LIGHTWHITE_EX}ضع معرف الجلسة: ")
+    sessionid = input(f"{Fore.LIGHTWHITE_EX}Enter session Id: ")
     user = ""
     for i in range(8):
         user += random.choice(string.ascii_lowercase)
@@ -102,8 +102,8 @@ def checkerwithoutsession(user, count):
         print(f"{Style.BRIGHT}{Fore.LIGHTBLACK_EX}[{Fore.LIGHTYELLOW_EX}{count}{Fore.LIGHTBLACK_EX}] {Fore.LIGHTWHITE_EX}{user}: {Fore.LIGHTRED_EX} لم يتم الصيد")
 
 
-wacn(f"""{Style.BRIGHT}{Fore.LIGHTYELLOW_EX} اداه  ahmdofn
- ahmdofn@ tik
+wacn(f"""{Style.BRIGHT}{Fore.LIGHTYELLOW_EX} TikTok Ahmdofn
+Use this tool and have fun!
                                                         
 {Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================
         {Style.BRIGHT}{Fore.LIGHTWHITE_EX}[1] Check if you are blocked
