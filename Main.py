@@ -18,13 +18,13 @@ def wacn(s):
 def vpn():
     user = ""
     for i in range(15):
-        user += random.choice(string.ascii_lowercase + string.digits)
-    urlvpn = f"https://www.instagram.com/{user}?"
+        user += random.choice(string.ascii_lowercase)
+    urlvpn = f"https://www.tiktok.com/@{user}?"
     headersvpn = {
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.9",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
         "Connection": "close",
-        "Host": "www.instagram.com",
+        "Host": "www.tiktok.com",
         "Accept-Encoding": "gzip, deflate",
         "Cache-Control": "max-age=0"
     }
@@ -41,13 +41,13 @@ def checksessionid():
     user = ""
     for i in range(8):
         user += random.choice(string.ascii_lowercase)
-    urlchecksession = f"https://www.instagram.com/api/uniqueid/check/?region=SA&aid=1233&unique_id={user}&app_language=ar"
+    urlchecksession = f"https://www.tiktok.com/api/uniqueid/check/?region=SA&aid=1233&unique_id={user}&app_language=ar"
     datachecksession = ""
     headerschecksession = {
         "Accept": "text/html,application/xhtml+xml,applicationxml;q=0.9,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.9",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36",
         "Connection": "close",
-        "Host": "www.instagram.com",
+        "Host": "www.tiktok.com",
         "Accept-Encoding": "gzip, deflate",
         "Cache-Control": "max-age=0"
     }
@@ -62,13 +62,13 @@ def checksessionid():
 
 
 def checkersession(sessionid, user, count):
-    urlcheckersession = f"https://www.Instagram.com/api/uniqueid/check/?region=SA&aid=1233&unique_id={user}&app_language=ar"
+    urlcheckersession = f"https://www.tiktok.com/api/uniqueid/check/?region=SA&aid=1233&unique_id={user}&app_language=ar"
     datacheckersession = ""
     headerscheckersession = {
         "Accept": "text/html,application/xhtml+xml,applicationxml;q=0.9,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.9",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36",
         "Connection": "close",
-        "Host": "www.instagram.com",
+        "Host": "www.tiktok.com",
         "Accept-Encoding": "gzip, deflate",
         "Cache-Control": "max-age=0"
     }
@@ -84,12 +84,12 @@ def checkersession(sessionid, user, count):
 
 
 def checkerwithoutsession(user, count):
-    urlcheckerwithoutsession = f"https://www.instagram.com/{user}?"
+    urlcheckerwithoutsession = f"https://www.tiktok.com/@{user}?"
     headerscheckerwithoutsession = {
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.9",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
         "Connection": "close",
-        "Host": "www.instagram.com",
+        "Host": "www.tiktok.com",
         "Accept-Encoding": "gzip, deflate",
         "Cache-Control": "max-age=0"
     }
@@ -106,15 +106,15 @@ wacn(f"""{Style.BRIGHT}{Fore.LIGHTYELLOW_EX} اداه  ahmdofn
  ahmdofn@ tik
                                                         
 {Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================
-        {Style.BRIGHT}{Fore.LIGHTWHITE_EX}[1] تحقق مما إذا كنت محظورًا
-        [2] تحقق مما إذا تم حظر معرف الجلسة
-        [3] المدقق مع معرف الجلسة
-        [4] المدقق بدون معرف الجلسة
+        {Style.BRIGHT}{Fore.LIGHTWHITE_EX}[1] Check if you are blocked
+        [2] Check if the session ID is blocked
+        [3] validator with session id
+        [4] Validator Automator
       
         {Style.BRIGHT}{Fore.LIGHTCYAN_EX}   
        (TikTok AhmdoFN on top)
 {Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================""")
-choose = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}حدد رقم: ")
+choose = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Pick a number: ")
 wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
 if choose == "1":
     vpn()
@@ -122,20 +122,20 @@ elif choose == "2":
     checksessionid()
 elif choose == "3":
     wacn(f"""{Style.BRIGHT}{Fore.LIGHTWHITE_EX}
-        [1] اختيار من الملفات
-        [2] اختيار تلقائي""")
+        [1] Pick from file
+        [2] Random Choosing""")
     wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
-    lastchoice = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}حدد رقم: ")
+    lastchoice = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Pick a Number: ")
     wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
     if lastchoice == "1":
-        sesssionid = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}أدخل معرف الجلسة: ")
-        fileinput = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}اختيار من الملفات: ").strip()
+        sesssionid = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Enter the session ID: ")
+        fileinput = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Choose from files: ").strip()
         wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
         users = open(fileinput, "r").read().splitlines()
         count = 0
         for user in users:
             if user == "":
-                wacn(f"{Style.BRIGHT}{Fore.LIGHTBLUE_EX}شكرا لاستخدام أداتي")
+                wacn(f"{Style.BRIGHT}{Fore.LIGHTBLUE_EX}Thanks For using my tool")
                 exit()
             else:
                 count += 1
@@ -160,10 +160,10 @@ elif choose == "3":
         wacn(f"{Style.BRIGHT}{Fore.LIGHTRED_EX}fool you will find nothing.")
 elif choose == "4":
     wacn(f"""{Style.BRIGHT}{Fore.LIGHTWHITE_EX}
-            [1] اختيار من الملفات
-            [2] اختيار تلقائي""")
+            [1] Check from Files
+            [2] Check Automatic""")
     wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
-    lastchoice = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}اختر رقم: ")
+    lastchoice = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Pick a number ")
     wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
     if lastchoice == "1":
         fileinput = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}اختيار من الملفات: ").strip()
@@ -172,14 +172,14 @@ elif choose == "4":
         count = 0
         for user in users:
             if user == "":
-                wacn(f"{Style.BRIGHT}{Fore.LIGHTBLUE_EX}شكرا لاستخدام أداتي")
+                wacn(f"{Style.BRIGHT}{Fore.LIGHTBLUE_EX}Thanks for using my tool")
                 exit()
             else:
                 count += 1
                 checkerwithoutsession(user, count)
     elif lastchoice == "2":
-        amount = int(input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}كم عدد المستخدمين: "))
-        length = int(input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}طول المستخدمين: "))
+        amount = int(input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Users You want to check? "))
+        length = int(input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Letters of the user? "))
         wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
         count = 0
         chars = "qwertyuiopasdfghjklzxcvbnm1234567890"
@@ -189,10 +189,10 @@ elif choose == "4":
                 user += random.choice(chars)
             count += 1
             checkerwithoutsession( user, count)
-        wacn(f"{Style.BRIGHT}{Fore.LIGHTBLUE_EX}شكرا لاستخدام أداتي")
+        wacn(f"{Style.BRIGHT}{Fore.LIGHTBLUE_EX}Thanks for using my tool")
         wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
         exit()
     else:
-        wacn(f"{Style.BRIGHT}{Fore.LIGHTRED_EX}أيها الأحمق لن تجد شيئًا")
+        wacn(f"{Style.BRIGHT}{Fore.LIGHTRED_EX}Restart the program you have made an error!")
 else:
-    wacn(f"{Style.BRIGHT}{Fore.LIGHTRED_EX}أيها الأحمق لن تجد شيئًا")
+    wacn(f"{Style.BRIGHT}{Fore.LIGHTRED_EX}Restart the program you have made an error!")
