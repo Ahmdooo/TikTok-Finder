@@ -19,7 +19,7 @@ def vpn():
     user = ""
     for i in range(15):
         user += random.choice(string.ascii_lowercase)
-    urlvpn = f"https://www.tiktok.com/@{user}?"
+    urlvpn = f"https://instagram.com/{user}"
     headersvpn = {
         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.9",
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.83 Safari/537.36",
@@ -62,7 +62,7 @@ def checksessionid():
 
 
 def checkersession(sessionid, user, count):
-    urlcheckersession = f"https://www.tiktok.com/api/uniqueid/check/?region=SA&aid=1233&unique_id={user}&app_language=ar"
+    urlcheckersession = f"https://www.tiktok.com/api/uniqueid/check/?region=US&aid=1233&unique_id={user}&app_language=ar"
     datacheckersession = ""
     headerscheckersession = {
         "Accept": "text/html,application/xhtml+xml,applicationxml;q=0.9,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.9",
