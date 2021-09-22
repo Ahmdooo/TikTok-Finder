@@ -102,21 +102,17 @@ def checkerwithoutsession(user, count):
         print(f"{Style.BRIGHT}{Fore.LIGHTBLACK_EX}[{Fore.LIGHTYELLOW_EX}{count}{Fore.LIGHTBLACK_EX}] {Fore.LIGHTWHITE_EX}{user}: {Fore.LIGHTRED_EX} Unavailable")
 
 
-wacn(f"""{Style.BRIGHT}{Fore.LIGHTYELLOW_EX} TikTok Ahmdofn
+wacn(f"""{Style.BRIGHT}{Fore.LIGHTYELLOW_EX} TikTok Ahmdoquit
 Use this tool and have fun!
                                                         
 {Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================
-        {Style.BRIGHT}{Fore.LIGHTWHITE_EX}[1] Check if you are blocked
-        [2] Check if the session ID is blocked
-        [3] validator with session id
-        [4] Validator Automator
-      
+        {Style.BRIGHT}{Fore.LIGHTWHITE_EX}[1] User checker
         {Style.BRIGHT}{Fore.LIGHTCYAN_EX}   
-       (TikTok AhmdoFN on top)
+       (TikTok Ahmdoquit on top)
 {Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================""")
 choose = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Pick a number: ")
 wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
-if choose == "1":
+if choose == "4":
     vpn()
 elif choose == "2":
     checksessionid()
@@ -158,14 +154,13 @@ elif choose == "3":
         exit()
     else:
         wacn(f"{Style.BRIGHT}{Fore.LIGHTRED_EX}fool you will find nothing.")
-elif choose == "4":
+elif choose == "1":
     wacn(f"""{Style.BRIGHT}{Fore.LIGHTWHITE_EX}
-            [1] Check from Files
-            [2] Check Automatic""")
+            [1] Check by entering 1""")
     wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
     lastchoice = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Pick a number ")
     wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
-    if lastchoice == "1":
+    if lastchoice == "02831":
         fileinput = input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}اختيار من الملفات: ").strip()
         wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
         users = open(fileinput, "r").read().splitlines()
@@ -177,8 +172,8 @@ elif choose == "4":
             else:
                 count += 1
                 checkerwithoutsession(user, count)
-    elif lastchoice == "2":
-        amount = int(input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Users You want to check? "))
+    elif lastchoice == "1":
+        amount = 900000000
         length = int(input(f"{Style.BRIGHT}{Fore.LIGHTWHITE_EX}Letters of the user? "))
         wacn(f"{Style.BRIGHT}{Fore.LIGHTMAGENTA_EX}===========================================================")
         count = 0
